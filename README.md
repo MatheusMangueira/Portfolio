@@ -1,3 +1,4 @@
+![Meu_portifolio](https://user-images.githubusercontent.com/98111351/163890873-ce9161ed-4259-42a4-ab9a-3183be5c48ee.jpg)
 <h1> Portfolio </h1>
 
 <h3>This project involves several concepts of javascript, html and css. </h3>
