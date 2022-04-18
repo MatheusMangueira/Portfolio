@@ -25,8 +25,26 @@ span{
     justify-content: space-between;
     height: 7vh;
     width: 100%;
-    background: #1a1a1a;
+    background: #1a1a1aa1;
+    /* box-shadow: -1px -2px 20px 0px #00ffd1; */
     /* border-bottom: 1px solid #00FFD1;  */
+}
+
+#btn_mobile{
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #170035;
+    color: #fff;
+    transition: 0.5s;
+    display: none;
+}
+
+#btn_mobile:hover{
+    background-color: #00FFD1;
+    color: #1a1a1a;
 }
 
 li a {
@@ -47,7 +65,7 @@ li a {
     
 }
 
-.ul-logo-matheus li a{
+.ul-logo-matheus li{
     font-size: 2rem; 
     color: #4A00FF;   
 }
@@ -76,6 +94,12 @@ li a {
     align-items: center;
     height: 100vh;
     width: 100%;
+    background-image: url(./image/Fundo_1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    
 }
 
 .primeira-div-main{
@@ -83,6 +107,32 @@ li a {
     padding: 10px;
     margin-left: 20px;
     color: #fff;
+}
+
+.primeira-div-main p{
+    font-size: 2rem;
+    
+}
+
+.imagem-logo{
+    animation: logo-anima 2s ease-in-out  infinite;
+}
+
+@keyframes logo-anima {
+    0%{
+        transform:translateY(0px);
+    }
+    25%{
+        transform:translateY(-30px);
+    }
+    50%{
+        transform:translateY(30px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+    
+        
 }
 
 .button{
@@ -95,12 +145,17 @@ li a {
     margin-top: 3vh;
     cursor: pointer;
     text-transform: uppercase;
+    transition: 0.5s;
+    width: 100%;
 }
 
 .button:hover{
-    background: #4A00FF;
-    transition: 2s;
+    background-color: #4A00FF; 
+    transform: scale(1.2);
+    
 }
+
+
 
 /* main segunda section*/
 
@@ -133,28 +188,59 @@ li a {
 .section-three{
     height: 80vh;
     width: 100%;
+    background-image: url(./image/Fundo_1.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+
+    
 }
+
+/* portfolio*/
+.projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    
+    
+}
+.projetos_prontos {
+    width: 400px;
+    height: 250px;
+    font-size: 1.5rem; 
+    color: #f9f9f9;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px ;
+    background-position:center ;
+}
+
+.dna_ img{
+    width: 100%;
+    height: 100%;
+    border-radius:20px ;
+}
+
+.projetos_prontos:hover{
+    transform: scale(1.1);
+    background-color: #1a1a1a;
+    color: white;
+}
+
 
 .section-three h2{
    text-align: center;
    font-size: 3rem;
-   margin-top: 20px;
+   padding: 20px;
 }
 
-.icones-passar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    color: #fff;
-    list-style: none;  
-    height: 70vh; 
-    width: 100%;
-}
 
-.icones-passar img{
-    cursor: pointer;
-}
 
 /* main section four*/
 
@@ -184,7 +270,7 @@ li a {
     margin: 10px;
 }
 
-.div-section-four picture{
+.div-section-four img{
     border: 2px solid #00F5C9;
 }
 
@@ -193,7 +279,11 @@ li a {
 .section-five{
    text-align: center;
    font-size: 2rem;
-   margin: 20px;
+   background-image: url(./image/Fundo_1.png);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+
 }
 
 .div-section-five{
@@ -211,8 +301,9 @@ li a {
     border-radius: 10px;
     height: 20vh;
     width: 30vw;
-    
-
+}
+.section-five h2 {
+    padding: 20px;
 }
 
 .div-section-five picture img{
@@ -234,7 +325,7 @@ li a {
 
 footer{
     background: #1e006570;
-    height: 20vh;
+    height: 25  vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -270,3 +361,542 @@ footer{
     margin: 10px;
 }
 
+/* responsividade*/
+@media(max-width: 1700px){
+   
+    .projetos{
+       
+        width:100%;
+        
+    }
+
+    .projetos_prontos{
+        width: 100% ;
+        margin: 10px; 
+        transition: 1s;
+       
+    
+    }
+
+    .projetos_prontos:hover{
+        transform: scale(1);
+        
+    }
+        
+
+    .projetos_prontos img{
+        width: 100%;
+        
+    }    
+
+    .div-section-five p{
+       
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+@media(max-width: 1400px ){
+
+    .primeira-div-main{
+        font-size: 2rem;
+
+    }
+    .imagem-logo{
+        height: 100%;
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        font-size: 50%;
+
+    }
+    .eu{
+        width: 100%;
+        
+    }
+
+    .texto-sobre-mim h2{
+        font-size: 3rem;
+    }
+
+    .texto-sobre-mim p {
+        font-size: 2rem;
+    }
+    .div-section-four img{
+        width: 400px;
+    }
+
+    .div-section-four h4 {
+        font-size: 2rem;
+    }
+    .div-section-four p {
+        font-size: 1.5rem;
+    }
+
+    .div-section-five{
+        width: 100%;
+    }
+    
+    .div-section-five p{
+       
+        font-size: 1rem;
+    }
+    
+    .figurinhas #css{
+        width: 100px;
+        height: 100px;
+       
+    }
+    .figurinhas #reactjs{
+        width: 100px;
+        height: 100px;
+       
+    }.figurinhas #html{
+        width: 100px;
+        height: 100px;
+       
+    }.figurinhas #js{
+        width: 100px;
+        height: 100px;
+       
+    }    
+    
+   
+}
+
+@media (max-width: 1090px){
+
+    .section-one{
+        flex-direction: column;
+        justify-content: center ;
+       
+    }
+  
+    .eu{
+        width: 90%;
+    }
+    .texto-sobre-mim h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .texto-sobre-mim p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .imagem-logo{
+        display: none;
+    }
+
+    .primeira-div-main {
+        margin-top: 50px;
+        font-size: 3rem;
+    }
+
+
+    .button{
+        font-size: 50%; 
+        width: 100%;
+    }
+
+    .servicos h2{
+        font-size: 2.5rem;
+    }
+    .div-section-four{
+       
+        flex-direction: column;
+    }
+    .div-section-four h4, p{
+        text-align: center;
+    }
+    .div-section-four img{
+        width: 400px;
+    }   
+
+    .div-section-five{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+
+    }
+
+    .section-five p{
+        max-width: 100%;
+       
+    }
+
+    .section-five h2{
+        font-size: 2.5rem;
+    }
+
+    .section-three h2 {
+        font-size: 2.5rem;
+    }
+
+    .projetos{
+        flex-direction: column;
+    }
+   
+    .projetos_prontos{
+        width: 300px ;
+        margin: 10px; 
+        transition: 1s;
+        height: 300px;
+    
+    }
+
+    .em_breve{
+        display: none;
+    }
+
+    .projetos_prontos img{
+        width: 100%;
+        
+    }  
+
+    .ul-icones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media(max-width:900px){
+    #texto{
+        width: 500px;
+        height: 100px;
+    }
+    
+    #btn_mobile{
+        display: block;
+    }
+    .ul-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 63px;
+        right: 0px;
+        background-color:#1a1a1aa1;
+        flex-direction: column;
+        height: 0px;
+        transition: 0.5s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    .ul-logo-matheus li{
+        font-size: 1.5rem;
+    }
+
+    .ul-menu.active{
+        overflow-y: auto;
+        visibility: visible;
+        justify-content: row;
+        height: calc(100vh - 63px);
+    }
+
+    .ul-menu li {
+        margin: 0 1rem;
+        border-bottom:1px solid #00f5c878;
+        padding: 1rem 0;
+        /* cursor: pointer; */
+    }
+
+    .ul-menu li:hover{
+        /* background-color: #00f5c878; */
+        
+    }
+
+
+}
+
+@media (max-width:700px){
+
+    .primeira-div-main {
+        
+        font-size: 2rem;
+    }
+
+    .section-two{
+        flex-direction: column;
+    }
+
+    .eu{
+        
+        width: 130px;
+        height: 230px;
+    }
+    .texto-sobre-mim h2{
+        font-size: 2rem;
+        
+    }
+    .texto-sobre-mim p {
+        font-size: 1rem;
+        
+    }
+
+    
+    .div-section-five p{
+        width: 400px;
+        height: 100px;
+    }
+
+
+    .footer-img img{
+        display: none;
+    }
+
+
+    .ul-icones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 670px){
+
+    .ul-logo-matheus li{
+        font-size: 1rem;
+    }
+
+    .button{
+        padding: 5px;
+    }
+
+    .primeira-div-main{
+        font-size: 1.5rem;
+
+    }
+
+    .eu{
+        
+        width: 160px;
+        height: 280px;
+    }
+
+    .texto-sobre-mim h2{
+        font-size: 1.5rem;
+        
+    }
+    .texto-sobre-mim p {
+        font-size: 0.8rem;
+        
+    }
+
+    .section-three h2 {
+        font-size: 2rem;
+    }
+    
+    .projetos_prontos{
+        width: 200px ;
+       
+        height: 300px;
+    
+    }
+
+    .servicos h2{
+        font-size: 2rem;
+    }
+    .div-section-four img{
+        width: 250px;
+    } 
+
+    .div-section-four p{
+        font-size: 1rem;
+    }
+    .div-section-four h4{
+        font-size: 1.5rem;
+    }
+
+
+    .figurinhas #css{
+        width: 80px;
+        height: 80px;
+       
+    }
+    .figurinhas #reactjs{
+        width: 80px;
+        height: 80px;
+       
+    }.figurinhas #html{
+        width: 80px;
+        height: 80px;
+       
+    }.figurinhas #js{
+        width: 80px;
+        height: 80px;
+       
+    }  
+
+
+  .section-five h2{
+        font-size: 2rem;
+    }
+
+    #btn_mobile{
+        font-size: 1rem;
+    }
+
+    #texto{
+        width: 50%;
+        height: 100px;
+        margin: 0 auto;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media(max-width:557px){
+   
+    #texto{
+        width: 50%;  
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 467px){
+    #texto{
+        height: 50px;
+
+        
+        font-size: 0.5rem;
+    }
+}
+
+
+@media(max-width:290px){
+    
+    #texto{
+        width: 70%;
+        height: 45px;
+        font-size: 0.5rem;
+    }
+
+    footer{
+        font-size: 0.8rem;
+    }
+    .eu{
+
+        width: 150px;
+        height: 260px;
+
+    }
+
+    .div-section-four img{
+        width: 210px;
+    } 
+
+    #btn_mobile{
+        font-size: 0.7rem;
+    }
+
+    .figurinhas #css{
+        width: 50px;
+        height: 50px;
+       
+    }
+    .figurinhas #reactjs{
+        width: 50px;
+        height: 50px;
+       
+    }.figurinhas #html{
+        width: 50px;
+        height: 50px;
+       
+    }.figurinhas #js{
+        width: 50px;
+        height: 50px;
+       
+    }
+
+}
+
+@media(max-width: 270px){
+
+    .primeira-div-main{
+        font-size: 1rem;
+    }
+
+    .eu{
+        width: 100px;
+        height: 150px;
+    }
+
+    .texto-sobre-mim h2{
+        font-size: 1rem;
+        
+    }
+    .texto-sobre-mim p {
+        font-size: 0.5rem;
+        
+    }
+
+    .section-five h2{
+        font-size: 1.1rem;
+    }
+
+    .section-three h2{
+        font-size: 1.1rem;
+    }
+
+    .servicos h2{
+        font-size: 1.1rem;
+    }
+
+    .div-section-four p{
+        font-size: 0.5rem;
+    }
+    .div-section-four h4{
+        font-size: 1rem;
+    }
+
+    .div-section-four img{
+        width: 200px;
+    }
+
+    .figurinhas #css{
+        width: 20px;
+        height: 20px;
+       
+    }
+    .figurinhas #reactjs{
+        width: 20px;
+        height: 20px;
+       
+    }.figurinhas #html{
+        width: 20px;
+        height: 20px;
+       
+    }.figurinhas #js{
+        width: 20px;
+        height: 20px;
+       
+    } 
+
+    
+
+    .copy{
+        font-size: 0.5rem;
+    }
+    .footer-texto{
+        font-size: 0.5rem;
+    }
+
+
+}
